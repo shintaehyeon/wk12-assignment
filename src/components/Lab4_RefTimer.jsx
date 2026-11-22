@@ -47,10 +47,16 @@ export default function Lab4RefTimer() {
     }
   }, []);
 
+  const formatTime = (sec) => {
+    const minutes = String(Math.floor(sec / 60)).padStart(2, '0');
+    const seconds = String(sec % 60).padStart(2, '0');
+    return `${minutes}:${seconds}`;
+  };
+
   return (
     <div>
       <p className="status">상태: {running ? 'Running' : 'Stopped'}</p>
-      <div className="count">{count}</div>
+      <div className="count">{formatTime(count)}</div>
       <div className="controls">
         <button onClick={start} disabled={running}>Start</button>
         <button className="secondary" onClick={stop} disabled={!running}>Stop</button>
