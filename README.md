@@ -1,6 +1,9 @@
 # OSS Week 12 - React Hooks Playground
 
+React의 `useEffect`, Cleanup, `useRef` 동작 원리를 4개의 실습(Lab 1~4)으로 직접 구현하고 비교·분석하는 12주차 과제 프로젝트입니다.
+
 - 작성자: 22101046 신태현
+- 원본 프로젝트(Starter): https://github.com/2026-2-OSS/week12_starter_project
 - Vercel 배포 URL: https://wk12-assignment.vercel.app/
 
 ## 실행 방법
